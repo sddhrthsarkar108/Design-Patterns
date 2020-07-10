@@ -25,7 +25,7 @@ how each command object internally performs action on the receiver.
     the ON/OFF switch)
     * GUI: Handling actions for menu items and buttons.
     
-* Target:
+* Target: Use command pattern to replace conditional dispatcher with command
 
         public void actionPerformed(ActionEvent e)
         {
@@ -43,7 +43,8 @@ how each command object internally performs action on the receiver.
         
         this code becomes very hard to maintain, and you'll have as many "if" statements as menu items
 
-* Java Api: Java provides Action interface or the Java AbstractAction class to create commands
+* Api Ref: 
+    * Java: Java provides Action interface or the Java AbstractAction class to create commands
 
 * Limitations: This pattern creates lot of Command classes. More operations leads to more command classes. 
 Intelligence required of which Command to use and when leads to possible maintenance issues for the central controller.
